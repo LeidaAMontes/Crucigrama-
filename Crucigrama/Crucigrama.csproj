@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D9C500E8-43CD-4DC1-B1E6-5E6CA8B8ADE4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Crucigrama</RootNamespace>
+    <AssemblyName>Crucigrama</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\christian.estrella\source\repos\Crucigrama\dist\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>5</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>1761E19B2D113A0177E1D1AA2FE46BD6B594F735</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Crucigrama_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Instrucciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instrucciones.designer.cs">
+      <DependentUpon>Instrucciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nivel1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nivel1.designer.cs">
+      <DependentUpon>Nivel1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nivel2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nivel2.Designer.cs">
+      <DependentUpon>Nivel2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nivel3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nivel3.designer.cs">
+      <DependentUpon>Nivel3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nivel4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nivel4.designer.cs">
+      <DependentUpon>Nivel4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nivel5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nivel5.designer.cs">
+      <DependentUpon>Nivel5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nivel6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nivel6.designer.cs">
+      <DependentUpon>Nivel6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Problemas\Problema1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Problemas\Problema1.designer.cs">
+      <DependentUpon>Problema1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Problemas\Problema2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Problemas\Problema2.designer.cs">
+      <DependentUpon>Problema2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Problemas\Problema3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Problemas\Problema3.designer.cs">
+      <DependentUpon>Problema3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Problemas\Problema4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Problemas\Problema4.designer.cs">
+      <DependentUpon>Problema4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Problemas\Problema5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Problemas\Problema5.designer.cs">
+      <DependentUpon>Problema5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Problemas\Problema6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Problemas\Problema6.designer.cs">
+      <DependentUpon>Problema6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Respuestas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Respuestas.designer.cs">
+      <DependentUpon>Respuestas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util.cs" />
+    <EmbeddedResource Include="Instrucciones.resx">
+      <DependentUpon>Instrucciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nivel1.resx">
+      <DependentUpon>Nivel1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nivel2.resx">
+      <DependentUpon>Nivel2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nivel3.resx">
+      <DependentUpon>Nivel3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nivel4.resx">
+      <DependentUpon>Nivel4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nivel5.resx">
+      <DependentUpon>Nivel5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nivel6.resx">
+      <DependentUpon>Nivel6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Problemas\Problema1.resx">
+      <DependentUpon>Problema1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Problemas\Problema2.resx">
+      <DependentUpon>Problema2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Problemas\Problema3.resx">
+      <DependentUpon>Problema3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Problemas\Problema4.resx">
+      <DependentUpon>Problema4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Problemas\Problema5.resx">
+      <DependentUpon>Problema5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Problemas\Problema6.resx">
+      <DependentUpon>Problema6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Respuestas.resx">
+      <DependentUpon>Respuestas.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Crucigrama_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bisectriz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Falsa posicion .jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grafico.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Newton - Raphson.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Punto fijo .jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Secante.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eliminacion Gaussiana.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gauss-Jordan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gauss-Seidel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jacobi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Montante.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Raices de polinomios .jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lineal con funcion .jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cuadratica con funcion.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cuadratica.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cubica.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Linea recta.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Regla de 3-8 de simpson.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Regla trapezoidal .jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cotes abiertas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cotes cerradas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Regla de 1-3 de simpson.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1-3 de simpson.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2do orden .jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3-8 de simpson.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3er orden.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4to orden .jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Euler hacia adelante.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\euler hacia atras.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Euler modificado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Euler.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Orden superior.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Runge - kutta.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Interpolacion lineal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lagrange.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Newton con diferencias divididas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Newton hacia adelante.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Newton hacia atras.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
